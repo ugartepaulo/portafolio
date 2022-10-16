@@ -7,33 +7,32 @@
     <title>Paulo Ugarte</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/loader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&family=Roboto+Mono&display=swap" rel="stylesheet">
+    
 
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
   />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/b569efb148.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <header class="header">
-
         <div class="contenedor-mayor menu">
-
             <div class="menu-logo">
-                <a href="#Home">PauloUgt._</a>
+                <a href="#Home">Antonio._</a>
             </div>
-
             <div class="menu-back" id="menuback">
-
             </div>
-
             <div class="menu-barra">
                 <i class="fa-solid fa-bars" id="btn-menu"></i>
             </div>
-
             <nav class="menu-link" id="menulink">
                 <a href="#">// home</a>
                 <a href="#">// about me</a>
@@ -41,35 +40,149 @@
                 <a href="#">// experience</a>
                 <a href="#">// contact</a>
             </nav>
-            
         </div>
         <div class=" contenedor text">
-            <div class="circulo"></div>
-            <h1 class="animate__animated animate__zoomIn">PAULO UGT</h1>
+            <div class="loader">
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+            </div>
+            <h1 class="animate__animated animate__zoomIn">ANTONIO</h1>
             <p>SOFTWARE DEVELOPER, FRONT END & STUDENT.</p>
+            
         </div>
+
+
+        <div class="scrolldown" style="--color: skyblue">
+            <div class="chevrons">
+                <div class="chevrondown"></div>
+                <div class="chevrondown"></div>
+            </div>
+        </div>
+        
     </header>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fill-opacity="1" d="M0,64L240,64L480,224L720,160L960,128L1200,192L1440,96L1440,0L1200,0L960,0L720,0L480,0L240,0L0,0Z"></path></svg>
 
-    <section class="section contenedor">
-        <h1>About me</h1>
-        <div class="section-descripcion">
+    <section class="experience contenedor">
+        <div class="experience__grid">
+            <div class="experience__grid__hijo primero">
+                <div class="experience__flex">
+                    <h1>About me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, est dolore sequi accusantium ipsam atque assumenda, hic a quisquam recusandae ex libero quod beatae mollitia sapiente accusamus ad consectetur odio.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, est dolore sequi accusantium ipsam atque assumenda, hic a quisquam recusandae ex libero quod beatae mollitia sapiente accusamus ad consectetur odio.</p>
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Download CV</span>
+                    </button>
+                </div>
+            </div>
+            <div class="experience__grid__hijo segundo">
+                <div class="experience__grid_img"><img src="/img/about.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Slider main container -->
+    <div class="mt-5">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="/img/wallpaper.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/wallpaper2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/wallpaper2.jpg" alt=""></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <div class="section-logos" >
+        <section class= "section contenedor">
             <div class="section-card" card-uno>
-                <h2>Prueba</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit recusandae numquam</p>
+                <i class="fa-solid fa-code"></i>
+                <p>Clean code</p>
             </div>
             <div class="section-card" card-dos>
-                <h2>Prueba</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit recusandae numquam</p>
+                <i class="fa-solid fa-user-secret"></i>
+                <p>Legal</p>
+            </div>
+            <div class="section-card" card-uno>
+                <i class="fa-solid fa-code"></i>
+                <p>Clean code</p>
             </div>
             <div class="section-card" card-tres>
-                <h2>Prueba</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit recusandae numquam</p>
+                <i class="fa-solid fa-shield"></i>
+                <p>Segure code</p>
+            </div>
+        </section>
+    </div>
+
+    
+
+    
+    <section class="about mt-5">
+        <h1 class="contenedor">Projects</h1>
+        <div class="about-grid contenedor">
+            <div class="about-content uno">
+                <img src="/img/wallpaper.jpg" alt="">
+            </div>
+            <div class="about-content dos">
+                <img src="/img/wallpaper2.jpg" alt="">
+            </div>
+            <div class="about-content tres">
+                <img src="/img/wallpaperblackandyellow.jpg" alt="">
+            </div>
+            <div class="about-content about-txt">
+                <h1>Antonio Ugarte Mendoza</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, natus possimus ea harum eius, omnis eligendi magnam, odit velit non maiores? Autem minima nam harum esse eligendi minus eos libero.</p>
             </div>
         </div>
     </section>
 
+    
+
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fill-opacity="1" d="M0,160L288,192L576,288L864,224L1152,160L1440,160L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+    <footer class="footer">
+        <div class="contenedor footer__elements">
+            <h1>Antonio Ugarte Mendoza</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed dolore maxime facilis! Doloribus ipsam, minima aut cum, pariatur sequi id voluptatem nisi, blanditiis voluptatum ad unde. Minima mollitia consequatur aliquid?</p>
+            <div class="social">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
 <script src="/js/main.js"></script>
 <script src="https://kit.fontawesome.com/b45bf3ad1e.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
 </body>
 </html>
