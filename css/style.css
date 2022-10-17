@@ -36,7 +36,7 @@ img{
     display: block;
 }
 .contenedor{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     width: 90%;
 }
@@ -101,7 +101,7 @@ img{
     top: 0;
     right: -1500px;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     transition: right 0.4s;
 }
 .menu-barra i{
@@ -177,13 +177,14 @@ img{
 .swiper {
     width: 100%;
     height: 500px;
-  }
- .swiper-wrapper img{
+    z-index: 1;
+}
+.swiper-wrapper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
- }
+}
 .swiper-button-prev{
     color:white !important;
 }
@@ -209,6 +210,8 @@ img{
 .segundo{
     display: flex;
     align-items: center;
+    max-width: 30rem;
+    margin: auto;
 }
 .section-logos{
     padding: 1rem 0;
@@ -282,7 +285,7 @@ img{
     color:white;
 }
 .main-info__location{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .main-info__location p{
     padding-bottom: 1rem;
@@ -294,7 +297,7 @@ img{
     font-size: 3rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .about-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
