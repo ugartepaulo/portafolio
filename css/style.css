@@ -35,7 +35,7 @@ body{
         #d6d6d6);
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 2rem 0;
 }
 .text-center{
@@ -314,6 +314,18 @@ img{
 .main-info__social{
     font-size: 3rem;
 }
+.cv{
+    background-image: url(/img/cv.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.experiencia__grid{
+    color: white;
+    margin-bottom: -5rem;
+}
+
+
 
 @media (min-width: 768px) {
     .about-grid{
@@ -370,9 +382,6 @@ img{
         grid-template-columns: repeat(4, 1fr);
     }
 
-
-
-
     .experience__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -380,13 +389,9 @@ img{
         color: white;
     }
 
-
-
     .education__main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-
 
 }
