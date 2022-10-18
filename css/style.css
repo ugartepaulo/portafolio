@@ -318,7 +318,7 @@ img{
     font-size: 3rem;
 }
 .cv{
-    background-image: url(/img/cv.png);
+    background-image: url(/img/final.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,8 +328,9 @@ img{
     margin-bottom: -2rem;
 }
 
-
-
+.experiencia__grid h2{
+    color: #ba9b5b;;
+}
 @media (min-width: 768px) {
     .about-grid{
         display: grid;
@@ -395,6 +396,28 @@ img{
     .education__main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .experiencia__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .hijo1{
+        grid-column: 1/ 2;
+        grid-row: 1/2;
+    }
+
+    .hijo2{
+        grid-column: 2/ 3;
+        grid-row: 2/3;
+        text-align:end;
+        padding-left: 2rem;
+    }
+    .hijo3{
+        grid-column: 1/ 2;
+        grid-row: 3/4;
     }
 
 }
