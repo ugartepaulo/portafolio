@@ -302,6 +302,9 @@ img{
     gap: 1rem;
     color:white;
 }
+.main-info a{
+    color:white;
+}
 .main-info__location{
     font-size: 1.2rem;
 }
