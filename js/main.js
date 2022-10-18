@@ -1,3 +1,4 @@
+//Js para hacer que el menu sea responsive
 
 btn= document.getElementById('btn-menu');
 menulink= document.getElementById('menulink');
@@ -17,7 +18,7 @@ function ocultar_menu() {
 }
 
 
-
+//Librería Swiper
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     //por defecto está en horizontal
@@ -72,3 +73,17 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+
+
+//Librería ScrollReveal
+var slideUp = {
+  distance: '60px',
+  origin: 'bottom',
+  opacity: null,
+  delay: 600,
+  reset:true,
+};
+
+ScrollReveal().reveal('.slide-up', slideUp);
+
